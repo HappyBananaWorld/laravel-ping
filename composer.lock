@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d36ea21a07128863db4da700acf07362",
+    "content-hash": "6e1b29f75b8fefd57c3df245edb49ba3",
     "packages": [
         {
             "name": "brick/math",
@@ -6980,6 +6980,40 @@
                 }
             ],
             "time": "2024-11-21T01:49:47+00:00"
+        },
+        {
+            "name": "your-vendor/live-debugger",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./laravel-ping",
+                "reference": "0663ca563df0b849df47bbf6a02068335a746d54"
+            },
+            "require": {
+                "illuminate/support": "^12.0",
+                "php": "^8.1",
+                "pusher/pusher-php-server": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "YourVendor\\LiveDebugger\\LiveDebuggerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "YourVendor\\LiveDebugger\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Live Debugger for Laravel with Reverb",
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "packages-dev": [
@@ -9347,7 +9381,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "your-vendor/live-debugger": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

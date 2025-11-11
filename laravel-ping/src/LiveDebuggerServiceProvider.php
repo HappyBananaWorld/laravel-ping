@@ -23,6 +23,10 @@ class LiveDebuggerServiceProvider extends ServiceProvider
 
         // Merge config
         $this->mergeConfigFrom(__DIR__.'/../config/live-debugger.php', 'live-debugger');
+
+        if (file_exists($file = __DIR__.'/helpers.php')) {
+            require $file;
+        }
     }
 
     public function register()

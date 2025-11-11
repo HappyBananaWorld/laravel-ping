@@ -16,8 +16,8 @@ class TestingController extends Controller
     {
 
         DebugCalled::dispatch('test');
-        DebugCalled::dispatch([
-        ]);
+p('hi');
+ping('ping called');
 
     }
 }

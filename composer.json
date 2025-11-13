@@ -1,5 +1,5 @@
 {
-    "name": "ping/laravel-ping",
+    "name": "laravel-ping",
     "description": "Live Debugger for Laravel with Reverb",
     "type": "library",
     "license": "MIT",

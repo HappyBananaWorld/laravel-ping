@@ -1,1 +1,0 @@
-@include('live-debugger::debugger')
